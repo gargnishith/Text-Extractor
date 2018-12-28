@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<title> Whoops! </title>
+<body>
+	<p>
+	<center>
+		<h3> Looks like you did not enter a valid file! </h3>
+		<hr />
+		<h4> Remember that the input should be only of the following format: </h4>
+		{% for x in ext%}
+		<ul> {{x}} </ul>
+		{% endfor %}
+	</center>
+	<center>
+		<hr />
+		<h4>Want to <a href = "/">try again? </a> </h4>
+	</center>
+</p>
+</body>
