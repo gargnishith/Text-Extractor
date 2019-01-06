@@ -1,3 +1,6 @@
+import io
+from google.cloud import vision
+from google.cloud.vision import types
 from flask import Flask, render_template, request, abort
 
 app = Flask(__name__)
@@ -20,8 +23,11 @@ def hidden():
 	if(request.method == "POST"):
 		f = request.files['file']
 		if(allowed(f.filename)):
-			# CALL OCR SERVICE USING f
-			a = 2
+			client = vision.ImageAnnotatorClient.from_service_account_json(r'''C:\Users\Saurabh Gupta\Desktop\My First Project-80353a5f126d.json'''
+			image = vision.types.Image()
+			#INCOMPLETE
+			resp = client.text_detection(image=image)
+	
 		else:
 			abort(400)
 
