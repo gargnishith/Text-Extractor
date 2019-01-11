@@ -1,10 +1,80 @@
 <!doctype html>
 <html>
 <title>Homepage: Upload an image! </title>
+<style>
+body
+{
+background-image:url('background-2462436_1920.jpg');
+background-repeat:no-repeat;
+background-position:cover;
+background-size:100%;
+text-align:center;
+}
+h1
+{
+text-align:center;
+color:#3CBC8D;
+font-size:6em;
+padding:2px;
+margin:auto;
+border-radius:25px;
+width:500px;
+height:100px;
+text-shadow:0.5px 0.5px black;
+outline-color:yellow;
+}
+input[type=file]
+{
+box-sizing:border-box;
+width:400px;
+padding:16px 8px;
+margin:auto;
+border:2px solid black ;
+float:center;
+}
+input[type=submit]
+{
+display:block;
+font-style=bold;
+background-color:gray;
+font-size:0.3em;
+   color:red;
+   margin:auto;
+   text-shadow:1px 1px white;
+
+
+box-sizing:border-box;
+width:400px;
+padding:16px 8px;
+margin:auto;
+border:2px solid black ;
+float:center;
+}
+input[type=submit]:focus
+{
+background-color:green;
+}
+input[type=submit]:hover:not(.active)
+{
+background-color:#3CBC8D;
+color:white;
+}
+input[type=file]:hover:not(.active)
+{
+background-color:#3CBC8D;
+color:white;
+}
+
+</style>
 <body>
-	<center> <p>Upload the file here: <br />
+
+	<center> <h1>Upload the file here: <br />
+	<br>
 	<form action="/hidden" method = "POST" enctype="multipart/form-data"> 
 		<input type="file" name="file" >
+		<br>
+		<br>
+		<br>
 		<input type="submit" value="submit">
 	</form>
 	</p>

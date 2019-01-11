@@ -1,19 +1,68 @@
 <!doctype html>
 <html>
 <title> Whoops! </title>
+<style>
+body
+{
+background-image:url('wrong-false-lie-bad-answer-response-word-3-d-animation_bj9cy2oxx_thumbnail-full11.png');
+background-repeat:no-repeat;
+background-position:cover;
+background-size:100%;
+text-align:center;
+}
+.create
+{
+   text-align:center;
+   color:black;
+   font-size:2em;
+   padding:2px;
+   margin:auto;
+   float:center;
+   text-shadow:0.5px 0.5px red;
+   width:500px;
+   height:75px;
+   z-index:1;
+}
+h3:hover:not(.active)
+{
+color:red;
+}
+h4:hover:not(.active)
+{
+color:red;
+}
+
+a:hover:not(.active)
+{
+color:black;
+}
+</style>
 <body>
 	<p>
 	<center>
-		<h3> Looks like you did not enter a valid file! </h3>
-		<hr />
-		<h4> Remember that the input should be only of the following format: </h4>
+		<h3 class="create"> Looks like you did not enter a valid file! </h3>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h4 class="create"> Remember that the input should be only of the following format: </h4>
+		<br>
+		<br>
+		<br>
+		<br>
 		{% for x in ext%}
 		<ul> {{x}} </ul>
 		{% endfor %}
 	</center>
 	<center>
-		<hr />
-		<h4>Want to <a href = "/">try again? </a> </h4>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<h4 class="create">Want to <a href = "/">try again? </a> </h4>
 	</center>
 </p>
 </body>
