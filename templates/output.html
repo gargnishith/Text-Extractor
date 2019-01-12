@@ -1,11 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<title> Contained text: </title>
-<body>
+<title> Contained text: </title>
+<style>
+body
+{
+background="new1.jpg";
+background-repeat:no-repeat;
+background-position:cover;
+background-size:100%;
+text-align:center;
+}
+h3
+{
+text-align:center;
+color:black;
+margin:auto;
+border-radius:25px;
+text-shadow:0.5px 0.5px black;
+}
+</style>
+
+<body style="border:8px solid Black;">
 	<center>
 	{% for entry in list %}
-		<h2> <b> {{entry}} </b> </h2>
+		<h3 >  {{entry}}  </h3>
 	{% endfor %}
 	</center>
 </body>
-</html> 
+</html>
