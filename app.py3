@@ -17,7 +17,6 @@ def allowed(name):
 #THE HOMEPAGE
 @app.route('/')
 def homepage():
-    print("Main andar hoon!")
     return render_template('homepage.html')
 
 #HOMEPAGE SUBMITS THE FILE HERE
@@ -36,6 +35,7 @@ def hidden():
 
             response = client.text_detection(image=image)
             texts = response.text_annotations
+            print('Texts:')
             return render_template('output.html', list = (texts[0].description).split('\n'))
         else:
             abort(400)
